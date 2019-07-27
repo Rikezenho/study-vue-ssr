@@ -1,15 +1,16 @@
 <template>
-  <div id="home">
+  <div id="about">
     <h1>{{ title }}</h1>
+    sadasdasdsad
   </div>
 </template>
 
 <script>
 export default {
-  name: "home",
+  name: "about",
   data() {
     return {
-      title: "Home"
+      title: "about"
     };
   }
 };

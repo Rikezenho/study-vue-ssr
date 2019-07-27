@@ -1,5 +1,5 @@
 <template>
-  <div id="app-ssr">
+  <div id="app">
     <h1>{{ title }}</h1>
   </div>
 </template>
