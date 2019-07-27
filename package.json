@@ -1,0 +1,32 @@
+{
+  "name": "study-vue-ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"npm:build-client\" \"npm:build-server\" \"npm:serve\"",
+    "dev-client": "npm run build-client -- --watch",
+    "dev-server": "npm run build-server -- --watch",
+    "build-client": "webpack --config webpack/webpack.client.config.js",
+    "build-server": "webpack --config webpack/webpack.server.config.js",
+    "serve": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "babel-eslint": "^10.0.2",
+    "concurrently": "^4.1.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "express": "^4.17.1",
+    "sass": "^1.22.7",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.1",
+    "vue-router": "^3.0.7",
+    "vue-server-renderer": "^2.6.10",
+    "vuex": "^3.1.1",
+    "vuex-router-sync": "^5.0.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-merge": "^4.2.1"
+  }
+}
