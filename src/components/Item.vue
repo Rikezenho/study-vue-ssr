@@ -36,3 +36,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  #item {
+    font-family: 'Tahoma';
+  }
+</style>
