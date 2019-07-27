@@ -20,15 +20,15 @@ export function createStore() {
         // return the Promise via `store.dispatch()` so that we know
         // when the data has been fetched
         return fetchData().then(({ data }) => {
-          commit("setItem", { data });
+          commit("setData", { data: data.data });
         });
-      }
+      },
     },
 
     mutations: {
-      setItem(state, { data }) {
+      setData(state, { data }) {
         state.items = data;
-      }
+      },
     }
   });
 }
